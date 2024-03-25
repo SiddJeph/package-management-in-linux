@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-background-color="rgb(51, 51, 51)">Introduction to Package Management on Linux</section>
+		<section data-background-color="rgb(51, 51, 51)">
+			<section data-auto-animate><h5>What is a Package Manager?</h5></section>
+			<section data-auto-animate>
+				<h5>What is a Package Manager?</h5>
+				<h10>A package manager or package-management system is a collection of software tools that 
+				automates the process of installing, upgrading,configuring, and removing computer programs 
+				for a computer in a consistent manner.</h10>
+			</section>
+		</section>
+
+
+        <section data-auto-animate data-background-color="rgb(51, 51, 51)">
+			<section data-auto-animate>
+				<h5>Importance of package management in Linux distributions</h5>
+			</section>
+			<section data-auto-animate>
+				<h5>Importance of package management in Linux distributions</h5>
+				<h10>1. Efficient Software Installation: Package management streamlines the process of installing software on Linux systems. Users can easily install applications, libraries, and dependencies with a few simple commands, saving time and effort compared to manual installations.</h10>
+			</section>
+			<section data-auto-animate>
+				<h5>Importance of package management in Linux distributions</h5>
+				<h10>2. Dependency Resolution: Package managers automatically handle dependencies, ensuring that all required software components are installed correctly. This prevents compatibility issues and reduces the risk of software conflicts.</h10>
+			</section>
+			<section data-auto-animate>
+				<h5>Importance of package management in Linux distributions</h5>
+				<h10>3. Version Control and Updates: Package management tools track software versions and provide mechanisms for updating packages. Users can easily upgrade to the latest versions or apply security patches without manually downloading and installing updates.</h10>
+			</section>
+			<section data-auto-animate>
+				<h5>Importance of package management in Linux distributions</h5>
+				<h10>4.Software Repository Management: Package managers rely on centralized repositories that contain pre-compiled packages and metadata. These repositories are maintained by distribution maintainers and ensure software authenticity, reliability, and security.</h10>
+			</section>
+		</section>
+	</section>
+
+	<section data-auto-animate data-background-color="rgb(51, 51, 51)" ><h5>Here's an overview of three popular package management tools in Linux</h5></section>
+			<section data-auto-animate>
+				<h5>apt (Advanced Package Tool):</h5>
+				<h10>Distribution: Debian and its derivatives like Ubuntu.<br>
+			        Functionality:
+					Manages software packages and dependencies.
+					Provides commands like apt-get and apt-cache for package installation, removal, and querying.
+					Supports package repository management, including adding, removing, and updating repositories.
+					<section>
+						<pre><code data-trim data-noescape >
+							sudo apt-get install package_name: Installs a package.
+							sudo apt-get remove package_name: Removes a package.
+							sudo apt-cache search search_term: Searches for packages.
+							sudo add-apt-repository repository_url: Adds a new repository.
+						</code></pre>
+					  </section>
+				</h10>
+			</section>
+		</section>
+
+		<section data-auto-animate data-background-color="rgb(51, 51, 51)" >
+			<h5>pacman:</h5>
+			<h10>Distribution: Arch Linux and its derivatives.
+				Functionality:
+				Handles package installation, removal, and updates.
+				Uses the Arch User Repository (AUR) for community-contributed packages.
+				Utilizes the pacman command for package management tasks.
+				<section>
+					<pre><code data-trim data-noescape>
+						sudo pacman -S package_name: Installs a package.
+						sudo pacman -R package_name: Removes a package.
+						sudo pacman -Syu: Updates all installed packages.
+						yay -S package_name: Installs a package from the AUR using yay (AUR helper).
+					</code></pre>
+				  </section>
+			</h10>
+		</section>
+	</section>
+
+	<section data-auto-animate data-background-color="rgb(51, 51, 51)" >
+		<h5>yum (Yellowdog Updater, Modified) / dnf (Dandified Yum):</h5>
+		<h10>Distribution: Red Hat-based distributions like Fedora, CentOS, and RHEL.
+			Functionality:
+			Manages software packages and dependencies.
+			Supports installation, removal, and updates of packages.
+			Uses repository configurations stored in .repo files.
+			<section>
+				<pre><code data-trim data-noescape>
+sudo yum install package_name: Installs a package.
+sudo yum remove package_name: Removes a package.
+sudo yum update package_name: Updates a package.
+sudo dnf install package_name: dnf is the newer version of yum with additional features.
+
+				</code></pre>
+			  </section>
+		</h10>
+	</section>
+</section>
+
+
+<section data-auto-animate data-background-color="rgb(51, 51, 51)" ><h5>Examples and Demonstrations of Package Management</h5></section>
+			<section data-auto-animate>
+				<h5>What is a Package Manager?</h5>
+				<h10></h10>
+			</section>
+		</section>
+
+
+			
+
+        
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			})
+			Reveal.initialize({
+	            autoPlayMedia: true
+            });
+		</script>
+	</body>
+</html>
